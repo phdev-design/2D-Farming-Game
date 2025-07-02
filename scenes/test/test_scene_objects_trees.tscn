@@ -1,9 +1,18 @@
-[gd_scene load_steps=3 format=4 uid="uid://caqfvwvtxryrj"]
+[gd_scene load_steps=4 format=4 uid="uid://caqfvwvtxryrj"]
 
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="1_1ilvq"]
 [ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="2_5nhwj"]
 
+[sub_resource type="GDScript" id="GDScript_5nhwj"]
+script/source = "extends Node2D # 這裡的類型取決於你的根節點是什麼
+
+func _ready():
+	randomize() # 這行很重要！
+	# 這裡可以放其他你需要的初始化代碼
+"
+
 [node name="TestSceneTilemap" type="Node2D"]
+script = SubResource("GDScript_5nhwj")
 
 [node name="GameTileMap" type="Node2D" parent="."]
 
@@ -16,9 +25,8 @@ tile_map_data = PackedByteArray("AAADAAUAAgAAAAAAAAARABIAAgABAAEAAAARABEAAgABAAE
 tile_set = ExtResource("1_1ilvq")
 
 [node name="Trees" type="TileMapLayer" parent="GameTileMap"]
-tile_map_data = PackedByteArray("AAAGAAgABgAAAAAAAgAJAAoABgAAAAAAAgAFAAwABgAAAAAAAgAHAA4ABgAAAAAAAgA=")
+tile_map_data = PackedByteArray("AAAGAAgABgAAAAAAAgAJAAoABgAAAAAAAgAFAAwABgAAAAAAAgAHAA4ABgAAAAAAAgAOAAgABgAAAAAAAwARAAsABgAAAAAAAwAOAA0ABgAAAAAAAwASAA8ABgAAAAAAAwA=")
 tile_set = ExtResource("1_1ilvq")
 
 [node name="Player" parent="GameTileMap" instance=ExtResource("2_5nhwj")]
 position = Vector2(161, 229)
-current_tool = 1

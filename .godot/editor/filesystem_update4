@@ -5,7 +5,7 @@ res://scenes/objects/shake.gdshader
 res://Tilesets/game_tile_set.tres
 res://scenes/characters/chicken/chicken.tscn
 res://scenes/characters/chicken/walk_state.gd
-res://scenes/test/test_scene_objects_trees.tscn
-res://scenes/test/test_scene_tilemap_layer_y_sort.tscn
-res://scenes/characters/chicken/chicken.gd
-res://scenes/characters/non_playable_character.gd
+res://scenes/characters/cow/cow.tscn
+res://scenes/test/test_scene_npc_cow.tscn
+res://scenes/characters/cow/cow.gd
+res://scenes/test/test_scene_npc_and_navigation.tscn

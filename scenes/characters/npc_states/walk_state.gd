@@ -21,6 +21,7 @@ func set_movment_target() -> void:
 	var target_position: Vector2 = NavigationServer2D.map_get_random_point(navigation_agent_2d.get_navigation_map(), navigation_agent_2d.navigation_layers, false)
 	navigation_agent_2d.target_position = target_position
 	speed = randf_range(min_speed, max_speed)	
+	
 func _on_process(_delta : float) -> void:
 	pass
 

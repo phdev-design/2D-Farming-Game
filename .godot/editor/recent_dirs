@@ -1,9 +1,10 @@
+res://assets/game/characters
+res://scenes/characters/chicken
 res://scenes/objects/rocks
 res://scenes/components
 res://scenes/objects/trees
 res://scenes/houses
 res://assets/game/tilesets
 res://Tilesets
-res://assets/game/characters
 res://scenes/characters/player
 res://scenes/test

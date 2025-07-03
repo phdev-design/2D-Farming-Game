@@ -1,10 +1,12 @@
-TileMapLayer
+NavigationAgent2D
+NavigationRegion2D
+Node2D
+Node
 CollisionShape2D
+AnimatedSprite2D
+CharacterBody2D
+TileMapLayer
 Sprite2D
 StaticBody2D
 Area2D
 AnimationPlayer
-AnimatedSprite2D
-Node2D
-Node
-CharacterBody2D

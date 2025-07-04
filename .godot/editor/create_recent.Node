@@ -1,10 +1,10 @@
+NavigationRegion2D
+Node2D
 NavigationAgent2D
 Node
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
-NavigationRegion2D
-Node2D
 TileMapLayer
 Sprite2D
 StaticBody2D

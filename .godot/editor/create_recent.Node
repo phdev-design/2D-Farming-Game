@@ -1,3 +1,7 @@
+Button
+HBoxContainer
+MarginContainer
+PanelContainer
 NavigationRegion2D
 Node2D
 NavigationAgent2D
@@ -9,4 +13,3 @@ TileMapLayer
 Sprite2D
 StaticBody2D
 Area2D
-AnimationPlayer

@@ -1,6 +1,7 @@
+MarginContainer
+CanvasLayer
 Button
 HBoxContainer
-MarginContainer
 PanelContainer
 NavigationRegion2D
 Node2D
@@ -11,5 +12,3 @@ AnimatedSprite2D
 CharacterBody2D
 TileMapLayer
 Sprite2D
-StaticBody2D
-Area2D

@@ -25,7 +25,6 @@ tile_set = ExtResource("1_kxmxa")
 
 [node name="Player" parent="." instance=ExtResource("2_gttdp")]
 position = Vector2(188, 200)
-current_tool = 3
 
 [node name="Egg" parent="." instance=ExtResource("3_gqv46")]
 position = Vector2(254, 171)
@@ -46,3 +45,9 @@ position = Vector2(312, 218)
 position = Vector2(375, 220)
 
 [node name="GameScreen" parent="." instance=ExtResource("9_gttdp")]
+
+[node name="Log2" parent="." instance=ExtResource("4_7fi45")]
+position = Vector2(313, 135)
+
+[node name="Log3" parent="." instance=ExtResource("4_7fi45")]
+position = Vector2(312, 99)

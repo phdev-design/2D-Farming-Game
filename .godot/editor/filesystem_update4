@@ -8,3 +8,4 @@ res://scenes/ui/game_ui_theme.tres
 res://scenes/ui/inventory_panel.tscn
 res://scenes/test/test_scene_inventory_management.tscn
 res://scenes/components/collectable_component.tscn
+res://scenes/ui/day_and_night_panel.tscn

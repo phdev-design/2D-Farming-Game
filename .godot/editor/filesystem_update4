@@ -7,3 +7,4 @@ res://Tilesets/house_tile_set.tres
 res://Tilesets/game_tile_set.tres
 res://scenes/test/test_scene_day_and_night_cycle.tscn
 res://scenes/ui/game_screen.tscn
+res://scripts/globals/day_and_night_cycle_manager.gd

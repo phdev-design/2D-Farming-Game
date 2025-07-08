@@ -2,9 +2,9 @@ res://scenes/ui/day_and_night_panel.tscn
 res://assets/ui/fonts/zx_palm_variation.tres
 res://scenes/ui/game_ui_theme.tres
 res://scenes/houses/door.gd
-res://scenes/objects/shake.gdshader
 res://Tilesets/house_tile_set.tres
+res://scenes/objects/shake.gdshader
 res://Tilesets/game_tile_set.tres
 res://scenes/test/test_scene_day_and_night_cycle.tscn
 res://scenes/ui/game_screen.tscn
-res://scripts/globals/day_and_night_cycle_manager.gd
+res://scenes/characters/player/player.tscn

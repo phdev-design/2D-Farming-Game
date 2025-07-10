@@ -1,14 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwx7j8k9l2m3n"]
+[gd_scene load_steps=4 format=3 uid="uid://bwx7j8lal2m3n"]
 
-[ext_resource type="Script" path="res://effects/water_splash.gd" id="1_splash"]
+[ext_resource type="Script" uid="uid://dn1psesjtb1v0" path="res://scenes/characters/player/effects/water_splash.gd" id="1_Vgw8g"]
+[ext_resource type="Texture2D" uid="uid://bw78ghbk7ohf6" path="res://assets/effects/water_droplet.png" id="2_2nqh2"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_splash"]
 lifetime_randomness = 0.2
+particle_flag_disable_z = true
 emission_shape = 1
 emission_sphere_radius = 4.0
-particle_flag_disable_z = true
 direction = Vector3(0, -1, 0)
-spread = 45.0
 initial_velocity_min = 20.0
 initial_velocity_max = 40.0
 angular_velocity_min = -180.0
@@ -17,28 +17,17 @@ gravity = Vector3(0, 98, 0)
 scale_min = 0.5
 scale_max = 1.2
 color = Color(0.4, 0.7, 1, 0.8)
-color_ramp = SubResource("gradient_splash")
-
-[sub_resource type="Gradient" id="gradient_splash"]
-offsets = PackedFloat32Array(0, 0.5, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0.8, 0.9, 1, 0.6, 0.6, 0.8, 1, 0)
 
 [node name="WaterSplash" type="Node2D"]
-script = ExtResource("1_splash")
+script = ExtResource("1_Vgw8g")
 
-[node name="ParticleEffect" type="GPUParticles2D" parent="."]
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 emitting = false
 amount = 20
-process_material = SubResource("ParticleProcessMaterial_splash")
-texture = preload("res://assets/effects/water_droplet.png")
-lifetime = 1.0
+texture = ExtResource("2_2nqh2")
 one_shot = true
 explosiveness = 1.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"default": SubResource("AnimationLibrary_splash")
-}
+process_material = SubResource("ParticleProcessMaterial_splash")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

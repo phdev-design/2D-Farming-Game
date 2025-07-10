@@ -87,7 +87,7 @@ func _on_enter() -> void:
 	setup_water_particles(config)
 	
 	# 播放澆水音效
-	play_watering_sound()
+	#play_watering_sound()
 
 func _on_exit() -> void:
 	is_watering = false
@@ -173,16 +173,16 @@ func water_plant(plant: Node2D) -> void:
 
 func create_water_splash_effect(position: Vector2) -> void:
 	# 創建水花效果
-	var splash_scene = preload("res://effects/water_splash.tscn")  # 假設有水花效果場景
+	var splash_scene = preload("res://scenes/characters/player/effects/water_splash.tscn")  # 假設有水花效果場景
 	if splash_scene:
 		var splash = splash_scene.instantiate()
 		get_tree().current_scene.add_child(splash)
 		splash.global_position = position
 
-func play_watering_sound() -> void:
-	# 播放澆水音效
-	if AudioManager.has_method("play_sound"):
-		AudioManager.play_sound("watering")
+#func play_watering_sound() -> void:
+	## 播放澆水音效
+	#if AudioManager.has_method("play_sound"):
+		#AudioManager.play_sound("watering")
 
 func finish_watering() -> void:
 	# 完成澆水，轉換到閒置狀態

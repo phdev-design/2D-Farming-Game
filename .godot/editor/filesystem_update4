@@ -1,0 +1,8 @@
+res://scenes/characters/player/effects/water_splash.tscn
+res://scenes/houses/door.gd
+res://Tilesets/house_tile_set.tres
+res://scenes/objects/shake.gdshader
+res://Tilesets/game_tile_set.tres
+res://assets/ui/fonts/zx_palm_variation.tres
+res://scenes/ui/game_ui_theme.tres
+res://scenes/characters/player/watering_state.gd

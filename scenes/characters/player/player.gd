@@ -1,6 +1,7 @@
 # player.gd
 class_name Player
 extends CharacterBody2D
+
 @onready var hit_component: HitComponent = $HitComponent
 
 @export var current_tool: DataTypes.Tools = DataTypes.Tools.None

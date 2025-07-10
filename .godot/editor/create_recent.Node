@@ -1,6 +1,9 @@
-GPUParticles2D
+Node
+TileMapLayer
+Node2D
 CollisionShape2D
 Sprite2D
+GPUParticles2D
 CanvasModulate
 TextureRect
 Button
@@ -9,6 +12,3 @@ Label
 MarginContainer
 PanelContainer
 VBoxContainer
-Area2D
-CanvasLayer
-HBoxContainer

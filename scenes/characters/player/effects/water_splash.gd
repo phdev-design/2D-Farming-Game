@@ -45,7 +45,7 @@ func start_splash() -> void:
 		particle_effect.restart()
 	
 	# 播放音效
-	play_splash_sound()
+	#play_splash_sound()
 	
 	# 創建縮放動畫
 	create_scale_animation()
@@ -65,10 +65,10 @@ func create_scale_animation() -> void:
 	modulate.a = 1.0
 	tween.tween_property(self, "modulate:a", 0.0, 0.4).set_delay(0.4)
 
-func play_splash_sound() -> void:
-	# 播放水花音效
-	if AudioManager and AudioManager.has_method("play_sound"):
-		AudioManager.play_sound("water_splash")
+#func play_splash_sound() -> void:
+	## 播放水花音效
+	#if AudioManager and AudioManager.has_method("play_sound"):
+		#AudioManager.play_sound("water_splash")
 
 func _on_timer_timeout() -> void:
 	# 清理水花效果

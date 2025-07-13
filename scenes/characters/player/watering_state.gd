@@ -198,8 +198,3 @@ func consume_water() -> void:
 	# 消耗水資源
 	if player.has_method("consume_water"):
 		player.consume_water(1)
-
-# 可選：添加手動取消澆水的方法
-func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("cancel") and is_watering:
-		finish_watering()

@@ -1,7 +1,8 @@
+Node2D
+Marker2D
 VBoxContainer
 Node
 TileMapLayer
-Node2D
 CollisionShape2D
 Sprite2D
 GPUParticles2D
@@ -11,4 +12,3 @@ Button
 Control
 Label
 MarginContainer
-PanelContainer

@@ -1,10 +1,14 @@
 res://scripts/globals
+res://scenes/ui
+res://assets/ui
+res://scenes
+res://scenes/components
+res://assets/game/objects
+res://addons/dialogue_manager
 res://assets/ui/fonts
 res://assets/game/characters
-res://scenes/components
 res://scenes/objects/plants
 res://scenes/objects/plants/
-res://scenes/ui
 res://scenes/objects
 res://scenes/characters/cow
 res://scenes/characters/chicken

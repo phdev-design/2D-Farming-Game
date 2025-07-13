@@ -31,6 +31,7 @@ tile_map_data = PackedByteArray("AAADAAUAAgAAAAAAAAARABIAAgABAAEAAAARABEAAgABAAE
 tile_set = ExtResource("1_ctmx0")
 
 [node name="Undergrowth" type="TileMapLayer" parent="GameTileMap"]
+visible = false
 position = Vector2(-21, 9)
 tile_map_data = PackedByteArray("AAAWAAkABAAFAAEAAAAYAAoABAAGAAEAAAAVAAsABAAGAAIAAAAYAA0ABAAHAAIAAAAUAA4ABAAGAAMAAAAZAAcABAAHAAAAAAA=")
 tile_set = ExtResource("1_ctmx0")

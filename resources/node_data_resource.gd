@@ -16,5 +16,5 @@ func _save_data(node: Node2D) -> void:
 		parent_node_path = parent_node.get_path()
 
 
-func _load_data(window: Window) -> void:
+func _load_data(_window: Window) -> void:
 	pass

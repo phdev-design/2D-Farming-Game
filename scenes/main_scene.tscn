@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1pck1t82vwb4"]
+[gd_scene load_steps=8 format=3 uid="uid://b1pck1t82vwb4"]
 
 [ext_resource type="PackedScene" uid="uid://b5q0t0tncnaa4" path="res://scenes/components/day_night_cycle_component.tscn" id="1_3kteb"]
+[ext_resource type="PackedScene" uid="uid://d1neg3rlosbga" path="res://audio/music/on_the_farm_music.tscn" id="1_c16ls"]
 [ext_resource type="PackedScene" uid="uid://baybe0wh3vyid" path="res://scenes/components/mouse_cursor_component.tscn" id="1_mdnhs"]
 [ext_resource type="Texture2D" uid="uid://cyaqte5n00rnd" path="res://assets/ui/mouse_icon.png" id="2_740td"]
 [ext_resource type="PackedScene" uid="uid://btwnj1tkk5uag" path="res://scenes/levels/level_1.tscn" id="2_m4lph"]
@@ -8,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://db1vn20luxgt0" path="res://scenes/ui/game_screen.tscn" id="4_max7d"]
 
 [node name="MainScene" type="Node"]
+
+[node name="OnTheFarmMusic" parent="." instance=ExtResource("1_c16ls")]
+autoplay = true
 
 [node name="MouseCursorComponent" parent="." instance=ExtResource("1_mdnhs")]
 cursor_component_texture = ExtResource("2_740td")

@@ -9,7 +9,7 @@ signal crop_harvesting
 
 var is_watered: bool
 var starting_day: int
-var current_day: int
+#var current_day: int
 
 func _ready() -> void:
 	DayAndNightCycleManager.time_tick_day.connect(on_time_tick_day)
@@ -33,7 +33,7 @@ func growth_states(starting_day: int, current_day: int) -> void:
 	
 	current_growth_state = state_index
 	
-	var name = DataTypes.GrowthStates.keys()[current_growth_state]
+	var _name = DataTypes.GrowthStates.keys()[current_growth_state]
 	#print("Current Growth State: ", name, " State Index: ", state_index)
 	
 	if current_growth_state == DataTypes.GrowthStates.Maturity:

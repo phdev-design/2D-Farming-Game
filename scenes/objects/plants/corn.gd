@@ -20,7 +20,7 @@ func _ready() -> void:
 	growth_cycle_component.crop_harvesting.connect(on_crop_harvesting)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	growth_state = growth_cycle_component.get_current_growth_state()
 	sprite_2d.frame = growth_state
 	

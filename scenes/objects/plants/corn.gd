@@ -28,7 +28,7 @@ func _process(delta: float) -> void:
 		flowering_particles.emitting = true
 
 
-func on_hurt(hit_damage: int) -> void:
+func on_hurt(_hit_damage: int) -> void:
 	if !growth_cycle_component.is_watered:
 		watering_particles.emitting = true
 		await get_tree().create_timer(5.0).timeout

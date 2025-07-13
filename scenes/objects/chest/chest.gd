@@ -82,7 +82,7 @@ func trigger_feed_harvest(inventory_item: String, scene: Resource) -> void:
 		
 		InventoryManager.remove_collectable(inventory_item)
 		
-func on_food_received(area: Area2D) -> void:
+func on_food_received(_area: Area2D) -> void:
 	call_deferred("add_reward_scene")
 	
 

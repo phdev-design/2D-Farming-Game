@@ -7,3 +7,7 @@ res://dialogue/dialogue_balloon_theme.tres
 res://assets/ui/fonts/zx_palm_variation.tres
 res://scenes/ui/game_ui_theme.tres
 res://scenes/ui/game_menu_screen.tscn
+res://scenes/objects/chest/chest.gd
+res://scenes/objects/plants/tomato.gd
+res://scenes/objects/plants/corn.gd
+res://scenes/objects/plants/growth_cycle_component.gd

@@ -40,7 +40,7 @@ func growth_states(starting_day: int, current_day: int) -> void:
 		crop_maturity.emit()
 		
 		
-func harvest_state(starting_day: int, current_day: int) -> void:
+func harvest_state(_starting_day: int, current_day: int) -> void:
 	if current_growth_state == DataTypes.GrowthStates.Harvesting:
 		return
 	

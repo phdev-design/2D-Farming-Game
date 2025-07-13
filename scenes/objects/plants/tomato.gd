@@ -20,7 +20,7 @@ func _ready() -> void:
 	growth_cycle_component.crop_harvesting.connect(on_crop_harvesting)
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	growth_state = growth_cycle_component.get_current_growth_state()
 	sprite_2d.frame = growth_state + start_tomato_frame_offset
 	
@@ -28,7 +28,7 @@ func _process(delta: float) -> void:
 		flowering_particles.emitting = true
 
 
-func on_hurt(hit_damage: int) -> void:
+func on_hurt(_hit_damage: int) -> void:
 	if !growth_cycle_component.is_watered:
 		watering_particles.emitting = true
 		await get_tree().create_timer(5.0).timeout

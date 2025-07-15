@@ -20,7 +20,7 @@ region = Rect2(0, 0, 16, 32)
 radius = 4.12311
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_au4vd"]
-size = Vector2(10, 20)
+size = Vector2(14, 20)
 
 [node name="SmallTree" type="Sprite2D"]
 material = SubResource("ShaderMaterial_skbjc")

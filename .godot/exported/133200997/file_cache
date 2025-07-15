@@ -9,7 +9,7 @@ res://addons/sprout_lands_tilemap/examples/scenes/blank_sprout_lands_tile_map.ts
 res://addons/sprout_lands_tilemap/examples/scenes/harvest_hill_example.tscn::73788a3a4b525294e703584cf0fa1ac1::1752449479::res://.godot/exported/133200997/export-e2cfd1f938c887b7533817b2f48a7f5e-harvest_hill_example.scn
 res://addons/sprout_lands_tilemap/installer/CopyConfirmationDialog.tscn::14d2aa99c78931513e9dcc9dab13bedd::1752449225::res://.godot/exported/133200997/export-7b52a70ff5dad76c01f8cd91a99d259b-CopyConfirmationDialog.scn
 res://addons/sprout_lands_tilemap/installer/DestinationDialog.tscn::26ef0918aec6ddb21f24a346155ae313::1752449225::res://.godot/exported/133200997/export-b06305ad9198d11c436fa59a9901e82e-DestinationDialog.scn
-res://assets/ui/fonts/zx_palm_variation.tres::670e1f746d2b1603729c420cc75f7c84::1752443377::res://.godot/exported/133200997/export-43638731218aa1953127ddc47a8ddfea-zx_palm_variation.res
+res://assets/ui/fonts/zx_palm_variation.tres::670e1f746d2b1603729c420cc75f7c84::1752538594::res://.godot/exported/133200997/export-43638731218aa1953127ddc47a8ddfea-zx_palm_variation.res
 res://audio/music/on_the_farm_music.tscn::680fbd7971c9b722ed2c61fec2db06a0::1752449478::res://.godot/exported/133200997/export-39ea18b9e82491cdbd563e95f4bf146c-on_the_farm_music.scn
 res://audio/sfx/chicken_cluck_1sfx.tscn::3088ee85a20261df15c4c7e4103c3f7b::1735842102::res://.godot/exported/133200997/export-8edcdbd5d8064d48d262cd2324edb79d-chicken_cluck_1sfx.scn
 res://audio/sfx/chicken_cluck_2sfx.tscn::af4ddac2ef2bd9a490eebc25d6c7f4ad::1735842102::res://.godot/exported/133200997/export-4d8b1663fc62cbd93a308e90e90b3603-chicken_cluck_2sfx.scn
@@ -17,7 +17,7 @@ res://audio/sfx/chicken_cluck_3sfx.tscn::7e8ca79a6795edd18fbd421fdd8cef26::17358
 res://audio/sfx/chicken_cluck_multiple_sfx.tscn::a7131031424763d33fa6093c0c5b8b81::1735842102::res://.godot/exported/133200997/export-4dc7b95f500cffc01313600710584f61-chicken_cluck_multiple_sfx.scn
 res://audio/sfx/cow_moo_sfx.tscn::9a4000255552d7abd86c2f172b7abfaf::1735842102::res://.godot/exported/133200997/export-51c00901894bd087ca418a2c496b01f0-cow_moo_sfx.scn
 res://audio/game_audio_bus_layout.tres::1f5fdd0afdaa829728dd72ce8bebe42b::1752444049::res://.godot/exported/133200997/export-e40c13bc01c98966c4d0077bea3116a9-game_audio_bus_layout.res
-res://dialogue/dialogue_balloon_theme.tres::a28e3dad74890d77ce4a2eb539939513::1752443377::res://.godot/exported/133200997/export-c4a89606ec1e30ad9e5691f626343eef-dialogue_balloon_theme.res
+res://dialogue/dialogue_balloon_theme.tres::a28e3dad74890d77ce4a2eb539939513::1752538594::res://.godot/exported/133200997/export-c4a89606ec1e30ad9e5691f626343eef-dialogue_balloon_theme.res
 res://dialogue/game_dialogue_balloon.tscn::72cc539877e05d57230c1dcfc44edc73::1752404287::res://.godot/exported/133200997/export-ec3b714dd593300684280e50c0b1e051-game_dialogue_balloon.scn
 res://resources/node_data_resource.tres::3bc0d8fced08d03c5b6e4097ce710c44::1735842102::res://.godot/exported/133200997/export-88eecfe0ce8b7b7d516932059a4f3c31-node_data_resource.res
 res://resources/save_game_data_resource.tres::004cbc91bc7ff10c98f521a2dfeb99f3::1735842102::res://.godot/exported/133200997/export-3d60b0ca081a876669ee0204f3dd565c-save_game_data_resource.res
@@ -25,7 +25,7 @@ res://resources/scene_data_resource.tres::be867bcc4ca7249c97e73bcac1a19fbd::1735
 res://resources/tilemap_layer_data_resource.tres::51d3af7204b9aaa3adcebb4f81b34bc8::1735842102::res://.godot/exported/133200997/export-591de8e81cb4c01515d5509680ef73a6-tilemap_layer_data_resource.res
 res://scenes/characters/chicken/chicken.tscn::8f9f162b460978e4f7a97a0a72251720::1752177527::res://.godot/exported/133200997/export-a311a8288f0b044c07834a4827961538-chicken.scn
 res://scenes/characters/cow/cow.tscn::5c9ebdada6cf581ead56fbd52e9e4d41::1752177527::res://.godot/exported/133200997/export-99b92467acf73e8d6cfcd38090101b3f-cow.scn
-res://scenes/characters/guide/guide.tscn::b31331a1f071d2fa04856607fa7f3d1b::1752370705::res://.godot/exported/133200997/export-d67af125c485c2d4e4ecf275b2b5a9d8-guide.scn
+res://scenes/characters/guide/guide.tscn::d9ab73081bd9ae05194aa63f17193050::1752539379::res://.godot/exported/133200997/export-d67af125c485c2d4e4ecf275b2b5a9d8-guide.scn
 res://scenes/characters/player/effects/water_splash.tscn::8282c9094f11cb3705abf53cf933d207::1752177527::res://.godot/exported/133200997/export-f89405ced6226da1e0f4698fc8b6d18b-water_splash.scn
 res://scenes/characters/player/player.tscn::64827564de03386d83152e35ffcddefb::1752365351::res://.godot/exported/133200997/export-a5f89ea40d9fbed536c4f84e51686402-player.scn
 res://scenes/components/audio_play_timer_component.tscn::11acfe4ff38c87f5cbbf074b4fc090f6::1752439101::res://.godot/exported/133200997/export-f694b43866f56abb971ede6b30b2957f-audio_play_timer_component.scn
@@ -46,7 +46,7 @@ res://scenes/components/test_scene_enable_tool_buttons_component.tscn::5ca58a887
 res://scenes/components/test_scene_save_data_manager_component.tscn::74b27330b3ce3743fd8961b9fe055fc6::1735842102::res://.godot/exported/133200997/export-308bd55e62203d95bc21f70630909af0-test_scene_save_data_manager_component.scn
 res://scenes/houses/door.tscn::d2d67b8d88da9e0911048a32f398cddc::1752177527::res://.godot/exported/133200997/export-29153766b256785c0c067579d6f2892d-door.scn
 res://scenes/houses/large_house.tscn::d9ef50a7b46d3e77e7626a7f54e40099::1752177527::res://.godot/exported/133200997/export-3757951e63e11eacfc677cad80f69cc2-large_house.scn
-res://scenes/levels/level_1.tscn::118903f98958d3c95890a49bd2fcb877::1752449478::res://.godot/exported/133200997/export-446b1ed11cc7129b20b35ff4df2b3752-level_1.scn
+res://scenes/levels/level_1.tscn::fffbf1a60049ed675c4ae7ed45343139::1752540132::res://.godot/exported/133200997/export-446b1ed11cc7129b20b35ff4df2b3752-level_1.scn
 res://scenes/objects/chest/chest.tscn::f50cbddaef7c17fe25d9bf31eae7329a::1752416753::res://.godot/exported/133200997/export-b81c8a6f9af70e1dda0989d9fa20aaae-chest.scn
 res://scenes/objects/plants/corn.tscn::bea441f8b4205f5b4f7e85bff7e523ca::1752365351::res://.godot/exported/133200997/export-c8d958a351d2300d9e3dd2f8034ead4a-corn.scn
 res://scenes/objects/plants/corn_harvest.tscn::dd85495db1515ce07f406811132d18c0::1752416851::res://.godot/exported/133200997/export-2f5dc16f00459facac1971d6e0e6546d-corn_harvest.scn
@@ -57,9 +57,9 @@ res://scenes/objects/plants/tomato_harvest.tscn::d52c3a9ed128696a2c5935bcdb2e8d7
 res://scenes/objects/plants/watering_particles.tscn::43c04f2d524df2425e6523e9e9946882::1752177527::res://.godot/exported/133200997/export-1a2c0ce6435a4984481c4780fd70b978-watering_particles.scn
 res://scenes/objects/rocks/rock.tscn::ce565067861de77fcf5045bf6f3fc764::1752177527::res://.godot/exported/133200997/export-43eb9ef5ddb86d0e0a9b42511b055155-rock.scn
 res://scenes/objects/rocks/stone.tscn::e60ff3001cd6db62aad0393a398ca7b5::1752177527::res://.godot/exported/133200997/export-f832e14f63e70c3463c4c1e4773ccfc7-stone.scn
-res://scenes/objects/trees/large_tree.tscn::361f4a6ffea97278e149ca5e5c124cdc::1752177527::res://.godot/exported/133200997/export-f9bb5896d4a8be3edfd5ac76a3876215-large_tree.scn
+res://scenes/objects/trees/large_tree.tscn::cbc630e634237aa39b9895b9b5efc6f6::1752540124::res://.godot/exported/133200997/export-f9bb5896d4a8be3edfd5ac76a3876215-large_tree.scn
 res://scenes/objects/trees/log.tscn::88200e7dd7c31d5114dcc2d0c5ac4ed7::1752177527::res://.godot/exported/133200997/export-2f0ebed99cef39ae6e2c35ab21776854-log.scn
-res://scenes/objects/trees/small_tree.tscn::7660eaf5bcfd74996fd5faf4c4a3537f::1752177527::res://.godot/exported/133200997/export-2aed0de91435d3a8588f5659728a8ff0-small_tree.scn
+res://scenes/objects/trees/small_tree.tscn::c578085507fb7334b6a399586bfc2ec0::1752540114::res://.godot/exported/133200997/export-2aed0de91435d3a8588f5659728a8ff0-small_tree.scn
 res://scenes/objects/egg.tscn::7801dbf59c20ea56724ff884c430c2ab::1752177527::res://.godot/exported/133200997/export-a7cc488a27eabca81327ea43496529a0-egg.scn
 res://scenes/objects/milk.tscn::cc91a3bc6cda63576114e08af643eb77::1752177527::res://.godot/exported/133200997/export-a5595db23d7205209d542da26fbbaa91-milk.scn
 res://scenes/test/test_scene_audio.tscn::3ba431f8d18571bbe6adc908479a8229::1752449478::res://.godot/exported/133200997/export-d546d2a634683b3a71eecc70d5cce469-test_scene_audio.scn
@@ -77,7 +77,7 @@ res://scenes/test/test_scene_npc_chicken.tscn::8d7f1e311faf3a802ae41dd215fecb2c:
 res://scenes/test/test_scene_npc_cow.tscn::80141ffdddf1eb3c2341ae10920133c1::1752177527::res://.godot/exported/133200997/export-65503d219524213438d67a1a908f7676-test_scene_npc_cow.scn
 res://scenes/test/test_scene_objects_chest.tscn::e410050a3bf4560b4454eda3f594de68::1752416513::res://.godot/exported/133200997/export-7dfd585324dbf3348531f1abcaf7a0af-test_scene_objects_chest.scn
 res://scenes/test/test_scene_objects_rocks.tscn::1bf19e9507bd0fbf70ec0c21df33bec1::1752177527::res://.godot/exported/133200997/export-a592b6c209549a4463e938488ce27a47-test_scene_objects_rocks.scn
-res://scenes/test/test_scene_objects_trees.tscn::8ecc997c4cce5cfe7ca23b4a00725496::1752177527::res://.godot/exported/133200997/export-386771b97d41e6d6214abcdca6b8d811-test_scene_objects_trees.scn
+res://scenes/test/test_scene_objects_trees.tscn::7e4d53c288d5434f62d15461b74d689f::1752540132::res://.godot/exported/133200997/export-386771b97d41e6d6214abcdca6b8d811-test_scene_objects_trees.scn
 res://scenes/test/test_scene_player.tscn::39056f36f0e3fe0cad99eaa464833629::1752177527::res://.godot/exported/133200997/export-5eb29c0e37ef17fe0b5c716baf6cfde3-test_scene_player.scn
 res://scenes/test/test_scene_tilemap.tscn::edef62f314001398144592b9dd678b4d::1752444269::res://.godot/exported/133200997/export-624cffee6123b6df333d3f5d12aaea9c-test_scene_tilemap.scn
 res://scenes/test/test_scene_tilemap_layer_y_sort.tscn::c42557662ba2bd7c484a51e9bca3167c::1752436644::res://.godot/exported/133200997/export-6d6bc374342a03e5f2ade4cc68ea6e3c-test_scene_tilemap_layer_y_sort.scn
@@ -86,10 +86,11 @@ res://scenes/ui/emotes_panel.tscn::fcaaa4f0194ba80778b0ee9316db29da::1752416850:
 res://scenes/ui/game_menu_screen.tscn::b39a7fd197d35e0543f66a215ef7720b::1752449478::res://.godot/exported/133200997/export-b61fa3123283f6729726aae875d571ab-game_menu_screen.scn
 res://scenes/ui/game_menu_screen_background.tscn::9a26f9a695cb2702cebeeeb3868fe548::1752449478::res://.godot/exported/133200997/export-c20a47d4f6880ae128620d02c915e0b5-game_menu_screen_background.scn
 res://scenes/ui/game_screen.tscn::143ab0af151ace783d9a6426062a5904::1752370706::res://.godot/exported/133200997/export-0e80bd322d94c8beef67e56ceee20456-game_screen.scn
-res://scenes/ui/game_ui_theme.tres::525143d3109f69d0bcdeae6c720eb624::1752443377::res://.godot/exported/133200997/export-74d3087a1ec2611098e1bf988c3d38fd-game_ui_theme.res
+res://scenes/ui/game_ui_theme.tres::525143d3109f69d0bcdeae6c720eb624::1752538594::res://.godot/exported/133200997/export-74d3087a1ec2611098e1bf988c3d38fd-game_ui_theme.res
 res://scenes/ui/inventory_panel.tscn::0b0aa122a36808538ef1a9ab0b476423::1752177527::res://.godot/exported/133200997/export-c9168278bd8403188dc5948e28ea7a5f-inventory_panel.scn
 res://scenes/ui/tools_panel.tscn::d6e371b4ee45cff43b2ef8b14c49094a::1752177527::res://.godot/exported/133200997/export-70f53bb38a316a05e7b5aed06944ba97-tools_panel.scn
-res://scenes/main_scene.tscn::1a52805339bfa377b55dc0e60a1c2306::1752449478::res://.godot/exported/133200997/export-21a49e14a0c58d7941d04142a5bf9ddc-main_scene.scn
-res://Tilesets/game_tile_set.tres::b48879a972e48579a701760c701fac5c::1752443377::res://.godot/exported/133200997/export-0b331570b30f3135ffb40abccc486acf-game_tile_set.res
-res://Tilesets/house_tile_set.tres::9908b32437c99f31132ce81214df8ca0::1752443377::res://.godot/exported/133200997/export-465213c207c41fd28427a16b5f253039-house_tile_set.res
+res://scenes/main_scene.tscn::147266f71ce1c28217cc7a1862e0d4b7::1752540131::res://.godot/exported/133200997/export-21a49e14a0c58d7941d04142a5bf9ddc-main_scene.scn
+res://Tilesets/game_tile_set.tres::b48879a972e48579a701760c701fac5c::1752538594::res://.godot/exported/133200997/export-0b331570b30f3135ffb40abccc486acf-game_tile_set.res
+res://Tilesets/house_tile_set.tres::9908b32437c99f31132ce81214df8ca0::1752538594::res://.godot/exported/133200997/export-465213c207c41fd28427a16b5f253039-house_tile_set.res
 res://main_scene.tscn::bee44cbab6da0234741205c5bf20cc50::1752417232::res://.godot/exported/133200997/export-fac9db9380da720a7609154e1ecab771-main_scene.scn
+res://scenes/levels/level_2.tscn::ee765231748af241d69739bbb3c73d39::1752538856::res://.godot/exported/133200997/export-a18c5401c17cd33ddcb0f5ac6af637f4-level_2.scn

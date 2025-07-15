@@ -1,3 +1,4 @@
+res://scenes/levels/level_1.tscn
 res://scenes/houses/door.gd
 res://Tilesets/house_tile_set.tres
 res://scenes/objects/shake.gdshader
@@ -5,3 +6,9 @@ res://Tilesets/game_tile_set.tres
 res://dialogue/dialogue_balloon_theme.tres
 res://assets/ui/fonts/zx_palm_variation.tres
 res://scenes/ui/game_ui_theme.tres
+res://scenes/main_scene.tscn
+res://scenes/levels/level_2.tscn
+res://scenes/characters/guide/guide.tscn
+res://scenes/test/test_scene_objects_trees.tscn
+res://scenes/objects/trees/small_tree.tscn
+res://scenes/objects/trees/large_tree.tscn

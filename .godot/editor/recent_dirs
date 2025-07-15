@@ -1,10 +1,11 @@
+/home/imac-ubuntu/文件/GitHub/2D-Farming-Game/html
+res://scenes/components
 /home/imac-ubuntu/文件/GitHub/2D-Farming-Game
 res://audio
 res://scripts/globals
 res://scenes/ui
 res://assets/ui
 res://scenes
-res://scenes/components
 res://assets/game/objects
 res://addons/dialogue_manager
 res://assets/ui/fonts
@@ -20,4 +21,3 @@ res://scenes/houses
 res://assets/game/tilesets
 res://Tilesets
 res://scenes/characters/player
-res://scenes/test

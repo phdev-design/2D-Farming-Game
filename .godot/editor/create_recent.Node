@@ -1,3 +1,4 @@
+Camera2D
 Node2D
 Marker2D
 VBoxContainer
@@ -11,4 +12,3 @@ TextureRect
 Button
 Control
 Label
-MarginContainer

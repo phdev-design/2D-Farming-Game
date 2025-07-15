@@ -46,7 +46,7 @@ res://scenes/components/test_scene_enable_tool_buttons_component.tscn::5ca58a887
 res://scenes/components/test_scene_save_data_manager_component.tscn::74b27330b3ce3743fd8961b9fe055fc6::1735842102::res://.godot/exported/133200997/export-308bd55e62203d95bc21f70630909af0-test_scene_save_data_manager_component.scn
 res://scenes/houses/door.tscn::d2d67b8d88da9e0911048a32f398cddc::1752177527::res://.godot/exported/133200997/export-29153766b256785c0c067579d6f2892d-door.scn
 res://scenes/houses/large_house.tscn::d9ef50a7b46d3e77e7626a7f54e40099::1752177527::res://.godot/exported/133200997/export-3757951e63e11eacfc677cad80f69cc2-large_house.scn
-res://scenes/levels/level_1.tscn::fffbf1a60049ed675c4ae7ed45343139::1752540132::res://.godot/exported/133200997/export-446b1ed11cc7129b20b35ff4df2b3752-level_1.scn
+res://scenes/levels/level_1.tscn::fffbf1a60049ed675c4ae7ed45343139::1752540501::res://.godot/exported/133200997/export-446b1ed11cc7129b20b35ff4df2b3752-level_1.scn
 res://scenes/objects/chest/chest.tscn::f50cbddaef7c17fe25d9bf31eae7329a::1752416753::res://.godot/exported/133200997/export-b81c8a6f9af70e1dda0989d9fa20aaae-chest.scn
 res://scenes/objects/plants/corn.tscn::bea441f8b4205f5b4f7e85bff7e523ca::1752365351::res://.godot/exported/133200997/export-c8d958a351d2300d9e3dd2f8034ead4a-corn.scn
 res://scenes/objects/plants/corn_harvest.tscn::dd85495db1515ce07f406811132d18c0::1752416851::res://.godot/exported/133200997/export-2f5dc16f00459facac1971d6e0e6546d-corn_harvest.scn

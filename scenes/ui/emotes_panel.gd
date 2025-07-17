@@ -10,8 +10,17 @@ func _ready() -> void:
 	
 	InventoryManager.inventory_changed.connect(on_inventory_changed)
 	GameDialogueManager.feed_the_animals.connect(on_feed_the_animals)
-	
-	
+
+
+# 【新增】每一幀都檢查滑鼠是否在此面板上
+func _process(_delta: float) -> void:
+	# 如果滑鼠在面板的矩形範圍內，就設定全域旗標。
+	# 這會和 tools_panel, inventory_panel 一起運作，
+	# 只要滑鼠在任何一個 UI 面板上，旗標就會是 true。
+	if get_global_rect().has_point(get_global_mouse_position()):
+		GameInputEvents.is_mouse_over_ui = true
+
+
 func play_emote(animation: String) -> void:
 	animated_sprite_2d.play(animation)
 

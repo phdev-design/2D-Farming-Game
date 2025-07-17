@@ -1,9 +1,14 @@
+res://scenes/objects/trees
+res://assets/game/characters/guide
 /home/imac-ubuntu/文件/GitHub/2D-Farming-Play-Game
+res://assets/game/player
+res://Tilesets
 res://scenes/components
+res://scenes/ui
+res://assets
 /home/imac-ubuntu/文件/GitHub/2D-Farming-Game
 res://audio
 res://scripts/globals
-res://scenes/ui
 res://assets/ui
 res://scenes
 res://assets/game/objects
@@ -14,10 +19,3 @@ res://scenes/objects/plants
 res://scenes/objects/plants/
 res://scenes/objects
 res://scenes/characters/cow
-res://scenes/characters/chicken
-res://scenes/objects/rocks
-res://scenes/objects/trees
-res://scenes/houses
-res://assets/game/tilesets
-res://Tilesets
-res://scenes/characters/player

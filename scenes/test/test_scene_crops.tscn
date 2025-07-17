@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=4 uid="uid://b2jd2y3kn8dgn"]
 
-[ext_resource type="PackedScene" uid="uid://b5q0t0tncnaa4" path="res://scenes/components/day_night_cycle_component.tscn" id="1_17gaa"]
+[ext_resource type="PackedScene" uid="uid://cg1x87ik477nc" path="res://scenes/components/day_night_cycle_component.tscn" id="1_17gaa"]
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="2_eku4r"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="3_s5uu4"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="3_s5uu4"]
 [ext_resource type="PackedScene" uid="uid://db1vn20luxgt0" path="res://scenes/ui/game_screen.tscn" id="4_f40v7"]
 [ext_resource type="PackedScene" uid="uid://bp1e7cah5qq5c" path="res://scenes/objects/plants/corn.tscn" id="5_eku4r"]
 [ext_resource type="PackedScene" uid="uid://c7wgxej6agfhv" path="res://scenes/objects/plants/tomato.tscn" id="6_s5uu4"]
@@ -11,9 +11,6 @@
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_17gaa")]
 visible = false
-initial_day = 6
-initial_hour = 14
-initial_minute = 18
 
 [node name="GameTileMap" type="Node2D" parent="."]
 position = Vector2(17, -1)
@@ -29,7 +26,7 @@ tile_set = ExtResource("2_eku4r")
 
 [node name="Player" parent="." instance=ExtResource("3_s5uu4")]
 position = Vector2(188, 200)
-current_tool = 3
+current_tool = 2
 
 [node name="GameScreen" parent="." instance=ExtResource("4_f40v7")]
 

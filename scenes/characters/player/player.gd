@@ -12,5 +12,7 @@ func _ready() -> void:
 	ToolManage.tool_selected.connect(on_tool_selected)
 	
 func on_tool_selected(tool: DataTypes.Tools) -> void:
+	# 新增這一行來除錯
+	print("3. Player received tool_selected signal! New tool is: ", tool)
 	current_tool = tool
 	hit_component.current_tool = tool

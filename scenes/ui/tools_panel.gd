@@ -21,8 +21,18 @@ func _ready() -> void:
 	tool_tomato.disabled = true
 	tool_tomato.focus_mode= Control.FOCUS_NONE
 	
-	
+
+# 【核心修改】使用 _process 函式來進行更可靠的檢查
+func _process(_delta: float) -> void:
+	# 每一幀都檢查滑鼠指標是否在 PanelContainer 的全域矩形範圍內。
+	# 【重要】我們移除了 else 區塊，只在滑鼠懸停時將旗標設為 true。
+	if get_global_rect().has_point(get_global_mouse_position()):
+		GameInputEvents.is_mouse_over_ui = true
+
+
 func _on_tool_axe_pressed() -> void:
+	# 新增這一行來除錯
+	print("1. Axe button pressed. Calling ToolManage.select_tool()")
 	ToolManage.select_tool(DataTypes.Tools.AxeWood)
 
 func _on_tool_tilling_pressed() -> void:

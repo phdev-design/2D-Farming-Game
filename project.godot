@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="sinmei's fram"
+config/name="Sinmei's fram"
 run/main_scene="uid://b1pck1t82vwb4"
 config/features=PackedStringArray("4.4", "Forward Plus")
-boot_splash/show_image=false
+boot_splash/image="uid://d5hjulsew6gf"
 config/icon="res://icon.svg"
 
 [audio]

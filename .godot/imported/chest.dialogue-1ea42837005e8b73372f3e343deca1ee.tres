@@ -9,7 +9,7 @@ titles = {
 "start_chicken_pasture_box": "15",
 "start_cow_pasture_box": "2"
 }
-character_names = PackedStringArray("Pasture Box", "Pupi")
+character_names = PackedStringArray("Pasture Box", "Sinmei")
 first_title = "0"
 lines = {
 "0": {
@@ -71,7 +71,7 @@ lines = {
 &"type": "response"
 },
 "18": {
-&"character": "Pupi",
+&"character": "Sinmei",
 &"id": "18",
 &"next_id": "19",
 &"text": "Yeah! Let's feed my chickens.",
@@ -120,7 +120,7 @@ lines = {
 &"type": "response"
 },
 "22": {
-&"character": "Pupi",
+&"character": "Sinmei",
 &"id": "22",
 &"next_id": "25",
 &"text": "No, I don't need to feed them. I have enough eggs.",
@@ -160,7 +160,7 @@ lines = {
 &"type": "response"
 },
 "5": {
-&"character": "Pupi",
+&"character": "Sinmei",
 &"id": "5",
 &"next_id": "6",
 &"text": "Yeah! Let's feed my cows.",
@@ -197,7 +197,7 @@ lines = {
 &"type": "response"
 },
 "8": {
-&"character": "Pupi",
+&"character": "Sinmei",
 &"id": "8",
 &"next_id": "11",
 &"text": "No, I don't need to feed them. I have enough milk.",
@@ -209,10 +209,10 @@ raw_text = "~ start_cow_pasture_box
 Pasture Box: [[Hi|Hello|Howdy]], your animals are hungry.
 Pasture Box: Would you like to feed your cows?
 - Yes
-	Pupi: Yeah! Let's feed my cows.
+	Sinmei: Yeah! Let's feed my cows.
 	do GameDialogueManager.action_feed_the_animals()
 - No
-	Pupi: No, I don't need to feed them. I have enough milk.
+	Sinmei: No, I don't need to feed them. I have enough milk.
 	
 	
 => END
@@ -222,11 +222,11 @@ Pasture Box: Would you like to feed your cows?
 Pasture Box: [[Hi|Hello|Howdy]], your animals are hungry.
 Pasture Box: Would you like to feed your chickens?
 - Yes
-	Pupi: Yeah! Let's feed my chickens.
+	Sinmei: Yeah! Let's feed my chickens.
 	do GameDialogueManager.action_feed_the_animals()
 
 - No
-	Pupi: No, I don't need to feed them. I have enough eggs.
+	Sinmei: No, I don't need to feed them. I have enough eggs.
 	
 	
 => END"

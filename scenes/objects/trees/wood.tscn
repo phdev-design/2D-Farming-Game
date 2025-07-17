@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyjlcydauki33"]
+
+[ext_resource type="Texture2D" uid="uid://2ssmcej7h6un" path="res://assets/game/objects/wood.png" id="1_yurcs"]
+[ext_resource type="PackedScene" uid="uid://cee15a6jccxnf" path="res://scenes/components/collectable_component.tscn" id="2_rxm62"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xm6ke"]
+atlas = ExtResource("1_yurcs")
+region = Rect2(0, 0, 11, 11)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_588pv"]
+radius = 9.0
+
+[node name="Log" type="Sprite2D"]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_xm6ke")
+
+[node name="CollectableComponent" parent="." instance=ExtResource("2_rxm62")]
+audio_bus_override = true
+collectable_name = "log"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
+shape = SubResource("CircleShape2D_588pv")
+debug_color = Color(0.465401, 0.591858, 7.70092e-07, 0.42)

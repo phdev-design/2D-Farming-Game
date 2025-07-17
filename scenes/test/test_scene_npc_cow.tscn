@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=4 uid="uid://cpisg6jvny58l"]
 
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="1_txxqc"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="2_rep6j"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="2_rep6j"]
 [ext_resource type="PackedScene" uid="uid://iy5175j1s6gs" path="res://scenes/characters/cow/cow.tscn" id="3_txxqc"]
 
 [sub_resource type="GDScript" id="GDScript_5nhwj"]

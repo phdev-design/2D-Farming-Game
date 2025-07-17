@@ -1,24 +1,48 @@
 # game_input_events.gd
 class_name GameInputEvents
 
-# 不再需要 static var direction
+# 【新增】一個全域變數，用來追蹤滑鼠是否在 UI 上方
+static var is_mouse_over_ui: bool = false
 
-# 這個函式現在可以正確處理斜向移動
+# --- Player 1 Functions ---
+
 static func get_movement_vector() -> Vector2:
-	# 這行程式碼會自動處理 WASD 同時按下的情況
-	# 它會回傳一個長度為 1 的方向向量，例如 (0.707, -0.707)
-	# 如果沒有按鍵，則回傳 (0, 0)
 	return Input.get_vector("move_left", "move_right", "move_up", "move_down")
 
-# is_movement_input() 也可以簡化
 static func is_moving() -> bool:
-	# 只要上面四個動作中有任何一個被按下，就回傳 true
 	return Input.is_action_pressed("move_left") or \
 		   Input.is_action_pressed("move_right") or \
 		   Input.is_action_pressed("move_up") or \
 		   Input.is_action_pressed("move_down")
 
 static func use_tool() -> bool:
-	var use_tool_value: bool = Input.is_action_just_pressed("hit")
+	# 【修改】只有當滑鼠不在 UI 上方時，才將點擊視為「使用工具」
+	if is_mouse_over_ui:
+		# 新增這一行
+		# print("Attempted to use tool, but mouse is over UI.")
+		return false
 	
-	return use_tool_value
+	# 新增這一行
+	print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
+	return Input.is_action_just_pressed("hit")
+
+# --- Player 2 Functions ---
+
+static func get_movement_vector_player2() -> Vector2:
+	return Input.get_vector("move_left", "move_right", "move_up", "move_down")
+
+static func is_moving_player2() -> bool:
+	return Input.is_action_pressed("move_left") or \
+		   Input.is_action_pressed("move_right") or \
+		   Input.is_action_pressed("move_up") or \
+		   Input.is_action_pressed("move_down")
+
+static func use_tool_player2() -> bool:
+	if is_mouse_over_ui:
+		# 新增這一行
+		# print("Attempted to use tool, but mouse is over UI.")
+		return false
+	
+	# 新增這一行
+	print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
+	return Input.is_action_just_pressed("hit")

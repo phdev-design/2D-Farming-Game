@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=4 uid="uid://bldup71cdrxs6"]
 
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="1_qmwic"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="2_qix2x"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="2_qix2x"]
 [ext_resource type="PackedScene" uid="uid://db1vn20luxgt0" path="res://scenes/ui/game_screen.tscn" id="3_0qf2n"]
 [ext_resource type="PackedScene" uid="uid://clgmwm4xhkiwt" path="res://scenes/objects/chest/chest.tscn" id="4_4ouly"]
 [ext_resource type="PackedScene" uid="uid://drmf0oamiyuxb" path="res://scenes/objects/plants/corn_harvest.tscn" id="6_r3ukw"]

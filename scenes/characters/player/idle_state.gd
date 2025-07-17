@@ -26,6 +26,7 @@ func _on_physics_process(_delta: float) -> void:
 func _on_next_transitions() -> void:
 	# 檢查是否觸發了「使用工具」的輸入
 	if GameInputEvents.use_tool():
+		print("B. use_tool is true! Current tool is: ", player.current_tool)
 		# 【關鍵修改】根據 DataTypes.gd 的 enum 進行判斷
 		# 使用 match 陳述式來根據當前工具的 enum 值決定下一個狀態
 		match player.current_tool:
@@ -33,6 +34,7 @@ func _on_next_transitions() -> void:
 				# 如果手上沒拿工具，就什麼事都不做
 				return
 			DataTypes.Tools.AxeWood:
+				print("C. Trying to transition to Chopping")
 				transition.emit("Chopping")
 			DataTypes.Tools.TillGround:
 				transition.emit("Tilling")

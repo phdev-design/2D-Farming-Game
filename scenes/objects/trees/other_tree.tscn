@@ -1,0 +1,66 @@
+[gd_scene load_steps=12 format=3 uid="uid://djmlo6c7ss2jh"]
+
+[ext_resource type="Shader" uid="uid://b8tfyr6cpvpu5" path="res://scenes/objects/shake.gdshader" id="1_tvrhe"]
+[ext_resource type="Texture2D" uid="uid://xv6p3e6pb4gq" path="res://assets/game/objects/trees/spr_deco_tree_01_strip4.png" id="2_tvrhe"]
+[ext_resource type="Script" uid="uid://708k7g8l2uf2" path="res://scenes/objects/trees/other_tree.gd" id="3_tvrhe"]
+[ext_resource type="PackedScene" uid="uid://dkg1ebk14qfl4" path="res://scenes/components/hurt_component.tscn" id="4_scdo1"]
+[ext_resource type="PackedScene" uid="uid://d1fjokifj7of2" path="res://scenes/components/damage_component.tscn" id="5_jw17p"]
+[ext_resource type="PackedScene" uid="uid://doud1rbkevup0" path="res://scenes/components/selectbox_component.tscn" id="6_dcsye"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_skbjc"]
+resource_local_to_scene = true
+shader = ExtResource("1_tvrhe")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyb6m"]
+atlas = ExtResource("2_tvrhe")
+region = Rect2(35, 0, 26, 34)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_au4vd"]
+radius = 7.07107
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_au4vd"]
+size = Vector2(30, 30)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dcsye"]
+radius = 18.7883
+
+[node name="OtherTree" type="Sprite2D"]
+y_sort_enabled = true
+material = SubResource("ShaderMaterial_skbjc")
+position = Vector2(0, -2)
+texture = SubResource("AtlasTexture_xyb6m")
+offset = Vector2(0, -7)
+script = ExtResource("3_tvrhe")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_au4vd")
+
+[node name="HurtComponent" parent="." instance=ExtResource("4_scdo1")]
+position = Vector2(0, -9)
+tool = 1
+
+[node name="HurtComponentCollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_au4vd")
+debug_color = Color(0.880533, 0.138585, 0.751514, 0.42)
+
+[node name="DamageComponent" parent="." instance=ExtResource("5_jw17p")]
+max_damage = 8
+
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(1, -11)
+shape = SubResource("CircleShape2D_dcsye")
+debug_color = Color(0.69839, 0.493176, 1.92523e-07, 0.42)
+
+[node name="Selectbox" parent="." instance=ExtResource("6_dcsye")]
+visible = false
+position = Vector2(-12, -21)

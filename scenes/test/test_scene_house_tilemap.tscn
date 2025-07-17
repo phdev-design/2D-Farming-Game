@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=4 uid="uid://bwby6eoir801y"]
 
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="1_6qx8m"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="2_8ykp8"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="2_8ykp8"]
 
 [node name="TestSceneHouseTilemap" type="Node2D"]
 
@@ -20,5 +20,5 @@ tile_map_data = PackedByteArray("AAATAAkABgAAAAAAAQA=")
 tile_set = ExtResource("1_6qx8m")
 
 [node name="Player" parent="." instance=ExtResource("2_8ykp8")]
-position = Vector2(188, 200)
+position = Vector2(187, 161)
 current_tool = 3

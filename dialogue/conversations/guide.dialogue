@@ -1,10 +1,10 @@
 ~ start
 
-Fufu: [[Hi|Hello|Howdy]], nice to meet you.
-Fufu: Welcome to your new farm.
-Fufu: As you can see the cows and chickens are hungry.
-Fufu: You need to grow some crops to feed them.
-Fufu: Here are some seeds to grow some crops. 
+Pakho: [[Hi|Hello|Howdy]], nice to meet you.
+Pakho: Welcome to your new farm.
+Pakho: As you can see the cows and chickens are hungry.
+Pakho: You need to grow some crops to feed them.
+Pakho: Here are some seeds to grow some crops. 
 - Take crop seeds
 	Sinmei:Yeah I can grow crops.
 	do GameDialogueManager.action_give_crop_seeds()

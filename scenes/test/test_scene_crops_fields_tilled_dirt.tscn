@@ -1,14 +1,13 @@
-[gd_scene load_steps=16 format=4 uid="uid://boacvg3asf7v2"]
+[gd_scene load_steps=15 format=4 uid="uid://boacvg3asf7v2"]
 
 [ext_resource type="PackedScene" uid="uid://my4gxbkfarvb" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_hge7i"]
-[ext_resource type="PackedScene" uid="uid://b5q0t0tncnaa4" path="res://scenes/components/day_night_cycle_component.tscn" id="1_ybuqf"]
+[ext_resource type="PackedScene" uid="uid://cg1x87ik477nc" path="res://scenes/components/day_night_cycle_component.tscn" id="1_ybuqf"]
 [ext_resource type="Script" uid="uid://c3kdvxxxr01e5" path="res://scenes/components/test_scene_save_data_manager_component.gd" id="2_4m3ig"]
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="2_71mpf"]
 [ext_resource type="PackedScene" uid="uid://dvr0xbkwbcg35" path="res://scenes/components/save_level_data_component.tscn" id="2_kbbyr"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="3_jdj2i"]
-[ext_resource type="PackedScene" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="3_n62uo"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="3_jdj2i"]
+[ext_resource type="PackedScene" uid="uid://ceadrc67hmted" path="res://scenes/components/test_scene_enable_tool_buttons_component.tscn" id="3_n62uo"]
 [ext_resource type="PackedScene" uid="uid://c87kgafahw6jv" path="res://scenes/components/fields_cursor_component.tscn" id="3_ybuqf"]
-[ext_resource type="Script" uid="uid://csrcxpelh3gti" path="res://scenes/components/fields_cursor_component.gd" id="4_71mpf"]
 [ext_resource type="PackedScene" uid="uid://db1vn20luxgt0" path="res://scenes/ui/game_screen.tscn" id="4_j2kjd"]
 [ext_resource type="Script" uid="uid://3su6edmja44b" path="res://scenes/components/save_level_data_component.gd" id="4_lkqxe"]
 [ext_resource type="PackedScene" uid="uid://b4j0yp8t2syxn" path="res://scenes/components/crops_cursor_component.tscn" id="7_jdj2i"]
@@ -27,9 +26,6 @@ script = ExtResource("2_4m3ig")
 script = ExtResource("4_lkqxe")
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_ybuqf")]
-initial_day = 6
-initial_hour = 14
-initial_minute = 18
 
 [node name="GameTileMap" type="Node2D" parent="."]
 position = Vector2(17, -1)
@@ -52,7 +48,6 @@ save_data_resource = ExtResource("8_n62uo")
 [node name="CropFields" type="Node2D" parent="."]
 
 [node name="FieldsCursorComponent" parent="." node_paths=PackedStringArray("grass_tilemap_layer", "tilled_soil_tilemap_layer") instance=ExtResource("3_ybuqf")]
-script = ExtResource("4_71mpf")
 grass_tilemap_layer = NodePath("../GameTileMap/Grass")
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
 
@@ -62,6 +57,6 @@ tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
 
 [node name="Player" parent="." instance=ExtResource("3_jdj2i")]
 position = Vector2(188, 200)
-current_tool = 3
+current_tool = 2
 
 [node name="GameScreen" parent="." instance=ExtResource("4_j2kjd")]

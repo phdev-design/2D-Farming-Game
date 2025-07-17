@@ -8,6 +8,8 @@ signal enable_tool(tool: DataTypes.Tools)
 
 
 func select_tool(tool: DataTypes.Tools) -> void:
+	# 新增這一行來除錯
+	print("2. ToolManage: Emitting tool_selected signal with tool: ", tool)
 	tool_selected.emit(tool)
 	selected_tool = tool
 	

@@ -15,6 +15,7 @@ y_sort_enabled = true
 texture = SubResource("AtlasTexture_xm6ke")
 
 [node name="CollectableComponent" parent="." instance=ExtResource("2_s5rqd")]
+audio_bus_override = true
 collectable_name = "log"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]

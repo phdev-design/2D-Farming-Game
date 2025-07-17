@@ -8,7 +8,7 @@ using_states = PackedStringArray()
 titles = {
 "start": "2"
 }
-character_names = PackedStringArray("Fufu", "Sinmei")
+character_names = PackedStringArray("Pakho", "Sinmei")
 first_title = "0"
 lines = {
 "0": {
@@ -54,35 +54,35 @@ lines = {
 &"type": "goto"
 },
 "2": {
-&"character": "Fufu",
+&"character": "Pakho",
 &"id": "2",
 &"next_id": "3",
 &"text": "[[Hi|Hello|Howdy]], nice to meet you.",
 &"type": "dialogue"
 },
 "3": {
-&"character": "Fufu",
+&"character": "Pakho",
 &"id": "3",
 &"next_id": "4",
 &"text": "Welcome to your new farm.",
 &"type": "dialogue"
 },
 "4": {
-&"character": "Fufu",
+&"character": "Pakho",
 &"id": "4",
 &"next_id": "5",
 &"text": "As you can see the cows and chickens are hungry.",
 &"type": "dialogue"
 },
 "5": {
-&"character": "Fufu",
+&"character": "Pakho",
 &"id": "5",
 &"next_id": "6",
 &"text": "You need to grow some crops to feed them.",
 &"type": "dialogue"
 },
 "6": {
-&"character": "Fufu",
+&"character": "Pakho",
 &"id": "6",
 &"next_id": "7",
 &"text": "Here are some seeds to grow some crops.",
@@ -128,11 +128,11 @@ lines = {
 }
 raw_text = "~ start
 
-Fufu: [[Hi|Hello|Howdy]], nice to meet you.
-Fufu: Welcome to your new farm.
-Fufu: As you can see the cows and chickens are hungry.
-Fufu: You need to grow some crops to feed them.
-Fufu: Here are some seeds to grow some crops. 
+Pakho: [[Hi|Hello|Howdy]], nice to meet you.
+Pakho: Welcome to your new farm.
+Pakho: As you can see the cows and chickens are hungry.
+Pakho: You need to grow some crops to feed them.
+Pakho: Here are some seeds to grow some crops. 
 - Take crop seeds
 	Sinmei:Yeah I can grow crops.
 	do GameDialogueManager.action_give_crop_seeds()

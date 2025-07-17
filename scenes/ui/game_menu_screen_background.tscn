@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cpycgwjeojdy1" path="res://scenes/ui/game_menu_screen_background.gd" id="1_kcym0"]
 [ext_resource type="TileSet" uid="uid://c700v6swupg0b" path="res://Tilesets/game_tile_set.tres" id="2_nwyjp"]
 [ext_resource type="PackedScene" uid="uid://bovjr8i02je3e" path="res://scenes/characters/chicken/chicken.tscn" id="3_t12qa"]
-[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player/player.tscn" id="4_04wme"]
+[ext_resource type="PackedScene" uid="uid://bjoy36aqkfpx8" path="res://scenes/characters/player2/player2.tscn" id="4_04wme"]
 [ext_resource type="PackedScene" uid="uid://whmy55kbro" path="res://scenes/characters/guide/guide.tscn" id="5_wudbr"]
 [ext_resource type="PackedScene" uid="uid://cfbyno4a7nnfu" path="res://scenes/houses/large_house.tscn" id="6_lg8wd"]
 

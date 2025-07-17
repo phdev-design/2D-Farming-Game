@@ -20,7 +20,13 @@ func on_max_damage_reached() -> void:
 	print("max damaged reached")
 	queue_free()
 
+# 【核心修正】交換了 add_child 和 global_position 的順序
 func add_log_scene() -> void:
 	var log_instance = log_scene.instantiate() as Node2D
-	log_instance.global_position = global_position
+	
+	# 1. 先將木頭實例加入到場景樹中
 	get_parent().add_child(log_instance)
+	
+	# 2. 在它被加入場景樹之後，再設定它的「全域座標」。
+	#    這樣 Godot 才能根據它的新父節點，正確計算出它應該在的本地位置。
+	log_instance.global_position = self.global_position

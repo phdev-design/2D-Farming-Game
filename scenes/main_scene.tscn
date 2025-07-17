@@ -1,15 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://b1pck1t82vwb4"]
+[gd_scene load_steps=9 format=3 uid="uid://b1pck1t82vwb4"]
 
-[ext_resource type="PackedScene" uid="uid://b5q0t0tncnaa4" path="res://scenes/components/day_night_cycle_component.tscn" id="1_3kteb"]
+[ext_resource type="PackedScene" uid="uid://cg1x87ik477nc" path="res://scenes/components/day_night_cycle_component.tscn" id="1_3kteb"]
+[ext_resource type="Script" uid="uid://dlf44bh4tqc70" path="res://scenes/main_scene.gd" id="1_18nlu"]
 [ext_resource type="PackedScene" uid="uid://d1neg3rlosbga" path="res://audio/music/on_the_farm_music.tscn" id="1_c16ls"]
 [ext_resource type="PackedScene" uid="uid://baybe0wh3vyid" path="res://scenes/components/mouse_cursor_component.tscn" id="1_mdnhs"]
 [ext_resource type="Texture2D" uid="uid://cyaqte5n00rnd" path="res://assets/ui/mouse_icon.png" id="2_740td"]
 [ext_resource type="PackedScene" uid="uid://btwnj1tkk5uag" path="res://scenes/levels/level_1.tscn" id="2_m4lph"]
 [ext_resource type="PackedScene" uid="uid://db1vn20luxgt0" path="res://scenes/ui/game_screen.tscn" id="4_max7d"]
+[ext_resource type="PackedScene" uid="uid://dakpcxb3eq7oo" path="res://scenes/characters/player/player.tscn" id="6_c16ls"]
 
 [node name="MainScene" type="Node"]
+script = ExtResource("1_18nlu")
 
 [node name="OnTheFarmMusic" parent="." instance=ExtResource("1_c16ls")]
+volume_db = 2.0
 autoplay = true
 
 [node name="MouseCursorComponent" parent="." instance=ExtResource("1_mdnhs")]
@@ -24,6 +28,12 @@ y_sort_enabled = true
 y_sort_enabled = true
 
 [node name="Level1" parent="GameRoot/LevelRoot" instance=ExtResource("2_m4lph")]
-position = Vector2(22, 154)
+position = Vector2(-154, -13)
+
+[node name="Player" parent="GameRoot" instance=ExtResource("6_c16ls")]
+position = Vector2(675, 224)
+
+[node name="Camera2D" type="Camera2D" parent="GameRoot/Player"]
+y_sort_enabled = true
 
 [node name="GameScreen" parent="." instance=ExtResource("4_max7d")]

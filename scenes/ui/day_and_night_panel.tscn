@@ -9,15 +9,23 @@ atlas = ExtResource("2_25t5k")
 region = Rect2(437, 34, 7, 12)
 
 [node name="DayAndNightPanel" type="Control"]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 3
 anchors_preset = 0
+offset_left = -101.0
+offset_top = 1.0
+offset_right = -1.0
+offset_bottom = 101.0
 theme = ExtResource("1_fnqby")
 script = ExtResource("2_xc6ft")
 
 [node name="DayPanel" type="PanelContainer" parent="."]
-layout_mode = 0
-offset_left = -80.0
-offset_bottom = 26.0
+layout_mode = 2
+offset_left = 19.0
+offset_top = 2.0
+offset_right = 98.0
+offset_bottom = 28.0
+grow_vertical = 2
 theme_type_variation = &"DayAndNightCounterPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="DayPanel"]
@@ -34,10 +42,11 @@ theme_type_variation = &"DayAndNightLabel"
 text = "DAY 0"
 
 [node name="TimePanel" type="PanelContainer" parent="."]
-layout_mode = 0
-offset_left = -80.0
-offset_top = 28.0
-offset_bottom = 54.0
+layout_mode = 2
+offset_left = 20.0
+offset_top = 31.0
+offset_right = 98.0
+offset_bottom = 57.0
 theme_type_variation = &"DayAndNightCounterPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="TimePanel"]
@@ -54,10 +63,12 @@ theme_type_variation = &"DayAndNightLabel"
 text = "00:00"
 
 [node name="Control" type="Control" parent="."]
+layout_mode = 2
 anchors_preset = 0
-offset_left = -80.0
-offset_top = 56.0
-offset_bottom = 74.0
+offset_left = 18.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 81.0
 
 [node name="NormalSpeedButton" type="Button" parent="Control"]
 layout_mode = 0

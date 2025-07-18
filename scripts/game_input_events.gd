@@ -23,7 +23,7 @@ static func use_tool() -> bool:
 		return false
 	
 	# 新增這一行
-	print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
+	#print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
 	return Input.is_action_just_pressed("hit")
 
 # --- Player 2 Functions ---
@@ -44,5 +44,5 @@ static func use_tool_player2() -> bool:
 		return false
 	
 	# 新增這一行
-	print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
+	#print("A. Checking for 'hit' action. Pressed: ", Input.is_action_just_pressed("hit"))
 	return Input.is_action_just_pressed("hit")

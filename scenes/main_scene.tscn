@@ -12,10 +12,6 @@
 [node name="MainScene" type="Node"]
 script = ExtResource("1_18nlu")
 
-[node name="OnTheFarmMusic" parent="." instance=ExtResource("1_c16ls")]
-volume_db = 2.0
-autoplay = true
-
 [node name="MouseCursorComponent" parent="." instance=ExtResource("1_mdnhs")]
 cursor_component_texture = ExtResource("2_740td")
 
@@ -37,3 +33,5 @@ position = Vector2(675, 224)
 y_sort_enabled = true
 
 [node name="GameScreen" parent="." instance=ExtResource("4_max7d")]
+
+[node name="OnTheFarmMusic" parent="." instance=ExtResource("1_c16ls")]

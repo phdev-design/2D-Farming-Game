@@ -18,3 +18,7 @@ res://scripts/game_input_events.gd
 res://scenes/test/test_scene_day_and_night_cycle.tscn
 res://scenes/ui/day_and_night_panel.gd
 res://scenes/ui/day_and_night_panel.tscn
+res://scenes/components/day_night_cycle_component.tscn
+res://scenes/objects/trees/large_tree.tscn
+res://scenes/test/test_scene_objects_lamps.tscn
+res://scenes/objects/lamps/lamps.tscn

@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://2xmfv8htrapl"]
+
+[ext_resource type="Texture2D" uid="uid://b02d7qgc3qvtu" path="res://assets/game/objects/outdoor_decor/outdoor_decor_free.png" id="1_iknai"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ev43w"]
+atlas = ExtResource("1_iknai")
+region = Rect2(68, 72, 10, 40)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ay16e"]
+radius = 11.0454
+
+[sub_resource type="Gradient" id="Gradient_hjqpn"]
+offsets = PackedFloat32Array(0, 0.665072)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0njqw"]
+gradient = SubResource("Gradient_hjqpn")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="Lamps" type="Sprite2D"]
+texture = SubResource("AtlasTexture_ev43w")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1, 13)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_ay16e")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(0, -11)
+color = Color(1, 1, 0.152941, 1)
+texture = SubResource("GradientTexture2D_0njqw")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+color = Color(0.94559, 0.376141, 0.57857, 1)
+energy = 0.04

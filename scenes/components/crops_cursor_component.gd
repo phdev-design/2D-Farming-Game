@@ -16,7 +16,7 @@ var local_cell_position: Vector2
 var distance: float
 var last_plant_time: float = 0.0
 
-# 緩存變量避免重複計算
+# 緩存變量
 var cached_mouse_position: Vector2
 var cached_cell_position: Vector2i
 var cache_valid: bool = false
@@ -25,36 +25,35 @@ func _ready() -> void:
 	await get_tree().process_frame
 	player = get_tree().get_first_node_in_group("player")
 
-func _unhandled_input(event: InputEvent) -> void:
-	# 檢查冷卻時間
+# --- 新增的公開函式 ---
+func perform_plant_action():
 	if Time.get_ticks_msec() / 1000.0 - last_plant_time < plant_cooldown:
 		return
 	
-	if event.is_action_pressed("remove_dirt"):
-		if ToolManage.selected_tool == DataTypes.Tools.TillGround:
-			if get_cell_under_mouse_with_validation():
-				remove_crop()
-	elif event.is_action_pressed("hit"):
-		if ToolManage.selected_tool == DataTypes.Tools.PlantCorn or ToolManage.selected_tool == DataTypes.Tools.PlantTomato:
-			if get_cell_under_mouse_with_validation():
-				add_crop()
+	if get_cell_under_mouse_with_validation():
+		add_crop()
+
+# 你也可以為移除作物建立一個類似的函式
+#func perform_remove_crop_action():
+	#if get_cell_under_mouse_with_validation():
+		#remove_crop()
+# -------------------------
 
 func _process(_delta: float) -> void:
-	# 每幀更新緩存，但只在需要時重新計算
 	update_mouse_cache()
 
 func update_mouse_cache() -> void:
+	if tilled_soil_tilemap_layer == null: return
 	var current_mouse_pos = tilled_soil_tilemap_layer.get_local_mouse_position()
 	
-	# 只有當滑鼠位置變化足夠大時才更新緩存
 	if not cache_valid or current_mouse_pos.distance_to(cached_mouse_position) > 1.0:
 		cached_mouse_position = current_mouse_pos
 		cached_cell_position = tilled_soil_tilemap_layer.local_to_map(cached_mouse_position)
 		cache_valid = true
 
 func get_cell_under_mouse_with_validation() -> bool:
-	if not cache_valid:
-		update_mouse_cache()
+	if player == null: return false
+	if not cache_valid: update_mouse_cache()
 	
 	mouse_position = cached_mouse_position
 	cell_position = cached_cell_position
@@ -62,17 +61,11 @@ func get_cell_under_mouse_with_validation() -> bool:
 	local_cell_position = tilled_soil_tilemap_layer.map_to_local(cell_position)
 	distance = player.global_position.distance_to(local_cell_position)
 	
-	# 驗證是否在有效範圍內
 	return distance < interaction_distance
 
 func add_crop() -> void:
-	# 檢查是否已經有作物在這個位置
-	if is_position_occupied(local_cell_position):
-		return
-	
-	# 檢查是否在耕地上
-	if cell_source_id == -1:
-		return
+	if is_position_occupied(local_cell_position): return
+	if cell_source_id == -1: return
 	
 	var crop_instance: Node2D = null
 	
@@ -84,29 +77,29 @@ func add_crop() -> void:
 	
 	if crop_instance:
 		crop_instance.global_position = local_cell_position
-		get_parent().find_child("CropFields").add_child(crop_instance)
+		# 使用群組來尋找節點，這比 get_parent().find_child() 更穩健
+		var crop_fields_node = get_tree().get_first_node_in_group("crop_fields")
+		if crop_fields_node:
+			crop_fields_node.add_child(crop_instance)
+		else:
+			print("[錯誤] 找不到 'crop_fields' 群組的節點! 請將 CropFields 節點加入該群組。")
 		last_plant_time = Time.get_ticks_msec() / 1000.0
-		
-		# 可選：添加種植音效
-		# AudioManager.play_sound("plant_sound")
 
 func remove_crop() -> void:
-	var crop_fields = get_parent().find_child("CropFields")
-	if not crop_fields:
-		return
+	var crop_fields = get_tree().get_first_node_in_group("crop_fields")
+	if not crop_fields: return
 	
 	var crop_nodes = crop_fields.get_children()
-	var tolerance = 8.0  # 像素容差，讓選擇更容易
+	var tolerance = 8.0
 	
 	for node: Node2D in crop_nodes:
 		if node.global_position.distance_to(local_cell_position) <= tolerance:
 			node.queue_free()
-			break  # 只刪除第一個找到的作物
+			break
 
 func is_position_occupied(position: Vector2) -> bool:
-	var crop_fields = get_parent().find_child("CropFields")
-	if not crop_fields:
-		return false
+	var crop_fields = get_tree().get_first_node_in_group("crop_fields")
+	if not crop_fields: return false
 	
 	var crop_nodes = crop_fields.get_children()
 	var tolerance = 8.0
@@ -116,11 +109,3 @@ func is_position_occupied(position: Vector2) -> bool:
 			return true
 	
 	return false
-
-# 可選：添加視覺預覽功能
-func get_preview_position() -> Vector2:
-	if not cache_valid:
-		update_mouse_cache()
-	
-	var preview_cell = tilled_soil_tilemap_layer.local_to_map(cached_mouse_position)
-	return tilled_soil_tilemap_layer.map_to_local(preview_cell)

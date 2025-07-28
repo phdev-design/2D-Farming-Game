@@ -30,7 +30,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			balloon.start(load("res://dialogue/conversations/guide.dialogue"), "start")
 
 func on_give_crop_seeds() -> void:
-	ToolManage.enable_tool_button(DataTypes.Tools.TillGround)
-	ToolManage.enable_tool_button(DataTypes.Tools.WaterCrops)
-	ToolManage.enable_tool_button(DataTypes.Tools.PlantCorn)
-	ToolManage.enable_tool_button(DataTypes.Tools.PlantTomato)
+	ToolManager.enable_tool_button(DataTypes.Tools.TillGround)
+	ToolManager.enable_tool_button(DataTypes.Tools.WaterCrops)
+	ToolManager.enable_tool_button(DataTypes.Tools.PlantCorn)
+	ToolManager.enable_tool_button(DataTypes.Tools.PlantTomato)

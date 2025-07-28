@@ -1,22 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqh2veofqqy2b"]
+[gd_scene load_steps=5 format=3 uid="uid://cue24whtkmmyd"]
 
-[ext_resource type="Texture2D" uid="uid://gkww51yf3pf" path="res://assets/game/objects/basic_grass_biom_things.png" id="1_oca81"]
-[ext_resource type="PackedScene" uid="uid://cee15a6jccxnf" path="res://scenes/components/collectable_component.tscn" id="2_k7uky"]
+[ext_resource type="Texture2D" uid="uid://b4enk6hxsaamf" path="res://assets/game/Objects/basic_grass_biom_things.png" id="1_e7jng"]
+[ext_resource type="PackedScene" uid="uid://bw8xx82hljpaw" path="res://scenes/components/collectible_component.tscn" id="2_p2euo"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dgxlj"]
-atlas = ExtResource("1_oca81")
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg10o"]
+atlas = ExtResource("1_e7jng")
 region = Rect2(114, 18, 10, 8)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_oca81"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_duj16"]
 radius = 4.0
 
 [node name="Stone" type="Sprite2D"]
-y_sort_enabled = true
-texture = SubResource("AtlasTexture_dgxlj")
+texture = SubResource("AtlasTexture_sg10o")
 
-[node name="CollectableComponent" parent="." instance=ExtResource("2_k7uky")]
+[node name="CollectableComponent" parent="." instance=ExtResource("2_p2euo")]
+y_sort_enabled = true
 collectable_name = "stone"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent"]
-shape = SubResource("CircleShape2D_oca81")
-debug_color = Color(0.701377, 0.487607, 0.168112, 0.42)
+shape = SubResource("CircleShape2D_duj16")
+debug_color = Color(0, 0.639562, 0.362871, 0.42)

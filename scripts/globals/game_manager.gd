@@ -1,6 +1,6 @@
 extends Node
 
-var game_menu_screen = preload("res://scenes/ui/game_menu_screen.tscn")
+var game_menu_screen = preload("res://scenes/UI/game_menu_screen.tscn")
 
 
 func _unhandled_input(event: InputEvent) -> void:

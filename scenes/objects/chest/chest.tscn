@@ -1,9 +1,9 @@
 [gd_scene load_steps=21 format=3 uid="uid://clgmwm4xhkiwt"]
 
-[ext_resource type="Script" uid="uid://b1sx5sgbj4hrs" path="res://scenes/objects/chest/chest.gd" id="1_ejvpw"]
-[ext_resource type="Texture2D" uid="uid://dr2jonhkhx24e" path="res://assets/game/objects/chest.png" id="1_vxk00"]
-[ext_resource type="PackedScene" uid="uid://b5bhywdixd4nh" path="res://scenes/components/interactable_component.tscn" id="2_e3nid"]
-[ext_resource type="PackedScene" uid="uid://bfxkl1wq1vxj4" path="res://scenes/components/interactable_label_component.tscn" id="3_ymkyf"]
+[ext_resource type="Script" uid="uid://ws05idbuja3k" path="res://scenes/objects/chest/chest.gd" id="1_ejvpw"]
+[ext_resource type="Texture2D" uid="uid://crrguyt50bnbt" path="res://assets/game/Objects/chest.png" id="1_vxk00"]
+[ext_resource type="PackedScene" uid="uid://capwmbicjoyat" path="res://scenes/components/interactable_component.tscn" id="2_e3nid"]
+[ext_resource type="PackedScene" uid="uid://qonk5n5xi3l5" path="res://scenes/components/interactable_label_component.tscn" id="3_ymkyf"]
 [ext_resource type="PackedScene" uid="uid://xwjp4wao3drw" path="res://scenes/components/feed_component.tscn" id="5_ydo2o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a23ei"]
@@ -133,7 +133,7 @@ offset_right = 9.0
 offset_bottom = -12.0
 
 [node name="RewardMarker" type="Marker2D" parent="."]
-position = Vector2(12, 23)
+position = Vector2(0, 23)
 
 [node name="FeedComponent" parent="." instance=ExtResource("5_ydo2o")]
 

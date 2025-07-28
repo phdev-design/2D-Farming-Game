@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp7orjlj5th3f"]
+[gd_scene load_steps=2 format=3 uid="uid://xhxnijoqpqgs"]
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7bpl7"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vgij1"]
 particle_flag_disable_z = true
 angular_velocity_min = -180.0
 angular_velocity_max = 180.0
@@ -10,8 +10,8 @@ gravity = Vector3(0, -100, 0)
 
 [node name="FloweringParticles" type="GPUParticles2D"]
 amount = 6
+process_material = SubResource("ParticleProcessMaterial_vgij1")
 lifetime = 0.6
 speed_scale = 0.4
 explosiveness = 0.5
 randomness = 0.5
-process_material = SubResource("ParticleProcessMaterial_7bpl7")

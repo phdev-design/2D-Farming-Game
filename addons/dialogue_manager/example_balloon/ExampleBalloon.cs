@@ -25,6 +25,10 @@ namespace DialogueManagerRuntime
       get => dialogueLine;
       set
       {
+        isWaitingForInput = false;
+        balloon.FocusMode = Control.FocusModeEnum.All;
+        balloon.GrabFocus();
+
         if (value == null)
         {
           QueueFree();
@@ -32,11 +36,9 @@ namespace DialogueManagerRuntime
         }
 
         dialogueLine = value;
-        ApplyDialogueLine();
+        UpdateDialogue();
       }
     }
-
-    Timer MutationCooldown = new Timer();
 
 
     public override void _Ready()
@@ -86,18 +88,6 @@ namespace DialogueManagerRuntime
         Next(response.NextId);
       }));
 
-
-      // Hide the balloon when a mutation is running
-      MutationCooldown.Timeout += () =>
-      {
-        if (willHideBalloon)
-        {
-          willHideBalloon = false;
-          balloon.Hide();
-        }
-      };
-      AddChild(MutationCooldown);
-
       DialogueManager.Mutated += OnMutated;
     }
 
@@ -132,7 +122,7 @@ namespace DialogueManagerRuntime
 
     public async void Start(Resource dialogueResource, string title, Array<Variant> extraGameStates = null)
     {
-      temporaryGameStates = new Array<Variant> { this } + (extraGameStates ?? new Array<Variant>());
+      temporaryGameStates = extraGameStates ?? new Array<Variant>();
       isWaitingForInput = false;
       resource = dialogueResource;
 
@@ -149,13 +139,12 @@ namespace DialogueManagerRuntime
     #region Helpers
 
 
-    private async void ApplyDialogueLine()
+    private async void UpdateDialogue()
     {
-      MutationCooldown.Stop();
-
-      isWaitingForInput = false;
-      balloon.FocusMode = Control.FocusModeEnum.All;
-      balloon.GrabFocus();
+      if (!IsNodeReady())
+      {
+        await ToSignal(this, SignalName.Ready);
+      }
 
       // Set up the character name
       characterLabel.Visible = !string.IsNullOrEmpty(dialogueLine.Character);
@@ -214,7 +203,14 @@ namespace DialogueManagerRuntime
     {
       isWaitingForInput = false;
       willHideBalloon = true;
-      MutationCooldown.Start(0.1f);
+      GetTree().CreateTimer(0.1f).Timeout += () =>
+      {
+        if (willHideBalloon)
+        {
+          willHideBalloon = false;
+          balloon.Hide();
+        }
+      };
     }
 
 

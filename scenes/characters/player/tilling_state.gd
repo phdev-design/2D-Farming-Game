@@ -17,16 +17,16 @@ func _on_next_transitions() -> void:
 
 
 func _on_enter() -> void:
-	if player.direction == Vector2.UP:
+	if player.player_direction == Vector2. UP:
 		animated_sprite_2d.play("tilling_back")
-	elif player.direction == Vector2.RIGHT:
+	elif player.player_direction == Vector2. DOWN:
+		animated_sprite_2d.play("tilling_front")
+	elif player.player_direction == Vector2. RIGHT:
 		animated_sprite_2d.play("tilling_right")
-	elif player.direction == Vector2.DOWN:
-		animated_sprite_2d.play("tilling_front")
-	elif player.direction == Vector2.LEFT:
+	elif player.player_direction == Vector2. LEFT:
 		animated_sprite_2d.play("tilling_left")
-	else:
-		animated_sprite_2d.play("tilling_front")
+	else: 
+		animated_sprite_2d.play("chopping_front")
 
 
 func _on_exit() -> void:
